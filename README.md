@@ -2,7 +2,7 @@
 
 > **Research, systems analysis, and decision support for business problems where technology can create leverage.**
 
-This repository is the **analysis layer** of my public portfolio. It contains real analysis extracted from a larger body of work and is being rebuilt around evidence rather than project volume.
+This repository is the **analysis layer** of my public portfolio. It converts real historical work into concise, inspectable case studies rather than reproducing an old project catalogue.
 
 ## What this work demonstrates
 
@@ -11,6 +11,7 @@ This repository is the **analysis layer** of my public portfolio. It contains re
 - Process and workflow analysis
 - Requirements thinking
 - Technology assessment
+- Architecture reasoning
 - Dependency and risk analysis
 - Decision support
 - Technical documentation
@@ -23,9 +24,21 @@ The objective is to reduce uncertainty and make the next decision easier.
 
 ## Proof of work
 
-### Architecture analysis — modular business systems
+### Case Study 01 — Modular Business Systems Architecture
 
-A historical systems project was structured as a **26-module application framework** rather than a single undifferentiated application. The documented architecture separated capabilities into distinct areas including:
+**Problem:** understand whether a large modular application architecture creates useful capability boundaries or simply creates complexity.
+
+**Evidence used:** historical `1234` architecture, module reference, delivery, status, and quick-start documentation.
+
+**Analysis performed:** capability decomposition, boundary analysis, coupling risks, dependency analysis, evidence validation, and implementation prioritisation.
+
+**Applied result:** the analysis directly informed Openmind's decision to start with a small provider-neutral connection boundary instead of rebuilding a broad platform all at once.
+
+→ [Read the full case study](case-studies/modular-business-systems.md)
+
+### What the source actually contained
+
+The historical system was structured as a **26-module application framework** covering areas such as:
 
 - Core domain and business rules
 - Identity and authentication
@@ -47,15 +60,19 @@ A historical systems project was structured as a **26-module application framewo
 
 The analytical value is not the number of modules. It is the **boundary design**: which concerns belong together, which should remain replaceable, and where coupling or operational risk can appear.
 
-### Evidence correction
+## Evidence correction
 
-The historical source also contains claims such as “production-ready” and large test-count figures. Those claims are **not accepted as independently verified facts** here. The public analysis separates documented design intent from implementation and validation evidence.
+The historical source contains strong maturity language, including `production-ready` and large test-count claims. Those claims are **not treated as independently verified facts** in this public portfolio.
 
-That distinction is intentional: credibility comes from traceable evidence, not impressive wording.
+Instead, the work distinguishes:
 
-## How a case study is structured
+**documented → designed → implemented → tested → deployed → validated**
 
-Each substantive analysis should answer:
+That distinction is intentional. Credibility comes from traceable evidence, not impressive wording.
+
+## How the analysis is structured
+
+Every substantive case study should answer:
 
 1. **What problem are we solving?**
 2. **Who experiences it and in what context?**
@@ -91,13 +108,14 @@ Every artifact distinguishes between:
 - **Inferred** — conclusion derived from evidence
 - **Proposed** — recommendation or design
 - **Implemented** — actually built
-- **Validated** — tested against defined evidence
+- **Tested** — defined tests have been executed
+- **Validated** — evidence supports the stated result
 
 ## Repository status
 
-**Active — first evidence set established; substantive case studies are being added selectively.**
+**Active — Case Study 01 published; additional analysis will be added only when it provides materially different evidence.**
 
-This repository will not become a dumping ground for every historical project. The historical corpus is used as a source of evidence, patterns, decisions, and reusable material.
+Historical projects remain a source of evidence, patterns, decisions, and reusable material. They are not republished merely to increase repository count.
 
 ---
 
