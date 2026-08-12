@@ -1,85 +1,104 @@
 # Business & Technology Analysis
 
-> **Research, structure, and decision support for business problems where technology can create leverage.**
+> **Research, systems analysis, and decision support for business problems where technology can create leverage.**
 
-This repository is the **analysis layer** of my public portfolio.
+This repository is the **analysis layer** of my public portfolio. It contains real analysis extracted from a larger body of work and is being rebuilt around evidence rather than project volume.
 
-I use it to study business and operational problems, understand the current state, identify constraints, translate them into requirements, evaluate technology options, and produce practical recommendations.
-
-## What this demonstrates
+## What this work demonstrates
 
 - Business analysis
 - Systems analysis
 - Process and workflow analysis
 - Requirements thinking
 - Technology assessment
-- Operational improvement
-- Risk and dependency analysis
+- Dependency and risk analysis
 - Decision support
 - Technical documentation
 
-## The working method
+## Working method
 
 **Context → Problem → Current State → Requirements → Options → Trade-offs → Recommendation → Implementation Path**
 
-The method is deliberately simple. Good analysis should reduce uncertainty and make the next decision easier.
+The objective is to reduce uncertainty and make the next decision easier.
 
-## What you will find
+## Proof of work
 
-Depending on the research topic, an analysis may include:
+### Architecture analysis — modular business systems
 
-- Problem definition
-- Stakeholder and user perspective
-- Current-state process
-- Capability or system map
-- Requirements
-- Constraints and assumptions
-- Alternatives considered
-- Cost / effort / risk considerations
-- Recommended approach
-- Implementation priorities
-- Evidence and sources
+A historical systems project was structured as a **26-module application framework** rather than a single undifferentiated application. The documented architecture separated capabilities into distinct areas including:
 
-## Who this work is for
+- Core domain and business rules
+- Identity and authentication
+- Authorization and policy
+- Configuration and secrets
+- Error handling and resilience
+- Observability and audit
+- Data access and state management
+- Resource and quota management
+- AI model abstraction
+- Knowledge retrieval / RAG
+- Context and decision logic
+- Workflow orchestration
+- Tool and integration gateways
+- API and event interfaces
+- Local runtime / offline support
+- Billing and ledger concerns
+- Module registry, testing, and documentation
 
-The repository is written so that different readers can extract value quickly:
+The analytical value is not the number of modules. It is the **boundary design**: which concerns belong together, which should remain replaceable, and where coupling or operational risk can appear.
 
-**Recruiter / hiring manager** — see the business and analytical capability.
+### Evidence correction
 
-**Business stakeholder** — understand the problem, implications, and recommendation.
+The historical source also contains claims such as “production-ready” and large test-count figures. Those claims are **not accepted as independently verified facts** here. The public analysis separates documented design intent from implementation and validation evidence.
 
-**Product / operations professional** — follow the process, requirements, and trade-offs.
+That distinction is intentional: credibility comes from traceable evidence, not impressive wording.
 
-**Engineer / architect** — see the system boundaries, constraints, dependencies, and technical reasoning.
+## How a case study is structured
+
+Each substantive analysis should answer:
+
+1. **What problem are we solving?**
+2. **Who experiences it and in what context?**
+3. **What is the current state?**
+4. **What requirements and constraints matter?**
+5. **What options exist?**
+6. **What are the trade-offs?**
+7. **What should be done next?**
+8. **What evidence supports the conclusion?**
+
+## Audience
+
+**Recruiters / hiring managers** — evidence of structured analytical thinking.
+
+**Business stakeholders** — problem, implications, recommendation, and implementation logic.
+
+**Product / operations professionals** — process, requirements, dependencies, and trade-offs.
+
+**Engineers / architects** — system boundaries, technical constraints, integration points, and reasoning.
 
 ## My role
 
-My primary contribution is **analysis and systems thinking**, supported by technical fluency.
+My primary contribution is **analysis and systems thinking**, supported by technical fluency. I am not presenting myself as a code-first software engineer.
 
-I am not presenting myself as a code-first engineer. I use technology to understand feasibility, communicate with technical teams, and design better operational systems.
+I use technology to understand feasibility, communicate with engineering teams, and design practical systems and operating improvements.
 
 ## Evidence standard
 
-Every analysis separates:
+Every artifact distinguishes between:
 
-- **Evidence** — what is known or documented
-- **Assumption** — what is being used provisionally
-- **Inference** — what follows from the available evidence
-- **Recommendation** — what I believe should be done
-- **Validation** — what has actually been tested
+- **Observed** — supported by available evidence
+- **Assumed** — provisional and still requiring validation
+- **Inferred** — conclusion derived from evidence
+- **Proposed** — recommendation or design
+- **Implemented** — actually built
+- **Validated** — tested against defined evidence
 
-This prevents polished documentation from becoming unsupported claims.
+## Repository status
 
-## Current status
+**Active — first evidence set established; substantive case studies are being added selectively.**
 
-**Active — public portfolio foundation.**
-
-The repository will grow by adding high-value analysis, not by collecting unrelated reports.
-
-## Portfolio context
-
-This repository is one of a small number of deliberately curated public assets. Historical projects and experiments are used as source material when they contain useful evidence; they are not reproduced simply to increase repository count.
+This repository will not become a dumping ground for every historical project. The historical corpus is used as a source of evidence, patterns, decisions, and reusable material.
 
 ---
 
-**Principle:** analysis should make complexity easier to understand and decisions easier to make.
+**Principle:** make complex business and technology decisions easier to understand, evaluate, and execute.
